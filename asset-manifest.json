@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/greenassetsenterprise/static/css/main.9b8f99a8.css",
+    "main.js": "/greenassetsenterprise/static/js/main.22881bac.js",
+    "index.html": "/greenassetsenterprise/index.html",
+    "main.9b8f99a8.css.map": "/greenassetsenterprise/static/css/main.9b8f99a8.css.map",
+    "main.22881bac.js.map": "/greenassetsenterprise/static/js/main.22881bac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b8f99a8.css",
+    "static/js/main.22881bac.js"
+  ]
+}
