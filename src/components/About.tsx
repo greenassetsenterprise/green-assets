@@ -2,25 +2,28 @@ export default function About() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        About
+        About Us
       </h2>
       <p className="mt-4 text-gray-500">
-        We're a group of people that did not find any simple tool to help us in
-        the rebalancing assets on the Internet. This is a simple tracking the
-        assets allocation that help people like us, to be able to review our
-        investments, and based on that help protect and grow our wealth.
+        We're a group of investors who recognized the need for a simple yet
+        powerful tool to help us rebalance our assets, protect our investments,
+        and grow our wealth. Our platform goes beyond just tracking shares; it
+        allows you to compare various asset classes and make informed decisions
+        about your next investment moves.
       </p>
       <p className="mt-4 text-gray-500">
-        The intend of this tool is not just add shares and compare it to
-        allocate our next capital in the next month, but it is a super powerfull
-        tool to add any asset classes to compare between it and review where we
-        need to add the next portion of money to rebalance our portfolio.
+        The purpose of this tool is not just to add shares and allocate next
+        month's capital. It's a powerful platform that allows you to add and
+        compare various asset classes, helping you review your investments and
+        determine where to allocate your next portion of money to rebalance your
+        portfolio.
       </p>
       <p className="mt-4 text-gray-500">
-        Please, if you liked this resource a little bit, we encourage you to
-        give us a feedback. We're looking to implement a platform where people
-        like you and us want to track and store more information. To have more
-        resource like storing charts with all assets.
+        If you find this resource helpful, we encourage you to provide feedback.
+        We're working to implement a platform that enables users like you to
+        track and store more information. Future features may include storing
+        charts of all assets, sending email notifications, exporting charts in
+        PDF format, and more.
       </p>
       <p className="mt-4 text-gray-500">
         Thank you very much! We really appreciate it.

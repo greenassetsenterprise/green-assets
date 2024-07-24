@@ -9,8 +9,8 @@ import { useNavigate } from "react-router-dom";
 
 const initialNavigation = [
   { name: "Homepage", href: "/homepage", current: true },
-  { name: "Project", href: "/project", current: false },
-  { name: "About", href: "/about", current: false },
+  { name: "Features", href: "/features", current: false },
+  { name: "About Us", href: "/about", current: false },
 ];
 
 function classNames(...classes: string[]) {

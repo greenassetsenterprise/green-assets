@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
-import Project from "./components/Project";
+import Features from "./components/Features";
 import About from "./components/About";
 import NotFound from "./components/NotFound";
 
@@ -23,7 +23,7 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/" element={<Navigate to="/homepage" />} />
               <Route path="/homepage" element={<Homepage />} />
-              <Route path="/project" element={<Project />} />
+              <Route path="/features" element={<Features />} />
               <Route path="/about" element={<About />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
