@@ -13,7 +13,7 @@ import NotFound from "./components/NotFound";
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/green-assets">
       <div className="flex flex-col min-h-screen">
         <header>
           <Navbar />
