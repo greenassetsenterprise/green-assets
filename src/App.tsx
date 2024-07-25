@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGA from "react-ga4";
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,8 +11,18 @@ import Homepage from "./components/Homepage";
 import Features from "./components/Features";
 import About from "./components/About";
 import NotFound from "./components/NotFound";
+const TRACKING_ID = "G-BHTL1JX7LX";
 
 const App: React.FC = () => {
+  useEffect(() => {
+    ReactGA.initialize(TRACKING_ID);
+    // Send pageview with a custom path
+    ReactGA.send({
+      hitType: "homepage",
+      page: "/homepage",
+      title: "Green Assets Homepage",
+    });
+  }, []);
   return (
     <Router basename="/green-assets">
       <div className="flex flex-col min-h-screen">
