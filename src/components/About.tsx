@@ -28,6 +28,7 @@ export default function About() {
       <p className="mt-4 text-gray-500">
         Thank you very much! We really appreciate it.
       </p>
+      <p className="mt-4 text-gray-500">greenassetsenterprise@gmail.com</p>
     </div>
   );
 }
