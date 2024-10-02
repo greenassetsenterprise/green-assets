@@ -1,6 +1,6 @@
 {
   "name": "green-assets",
-  "homepage": "https://greenassetsenterprise.github.io/green-assets/",
+  "homepage": "https://greenassetsenterprise.github.io/green-assets/homepage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
