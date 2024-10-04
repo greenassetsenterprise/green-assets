@@ -6,8 +6,34 @@ const includedFeatures = [
   "Separate different portfolios in different kinds of assets classes",
   "Alert of price changes",
 ];
+import { useEffect, useState } from 'react';
+import sendDataToGoogleSheet from "../api/sendDataToGoogleSheet";
 
 export default function Features() {
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleSendData = async () => {
+      setLoading(true);
+      setError(null);
+
+      try {
+        await sendDataToGoogleSheet(1, 'features');
+      } catch (err) {
+        if (err instanceof Error) {
+          setError(err.message);
+        } else {
+          setError('An unknown error occurred');
+        }
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    handleSendData();
+  }, []);
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import sendDataToGoogleSheet from "../api/sendDataToGoogleSheet";
 import { Chart } from "react-google-charts";
 import {
   PlusIcon,
@@ -29,6 +30,30 @@ const assetsToRebalanceOptions = {
 };
 
 export default function Homepage() {
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleSendData = async () => {
+      setLoading(true);
+      setError(null);
+
+      try {
+        await sendDataToGoogleSheet(1, 'homepage');
+      } catch (err) {
+        if (err instanceof Error) {
+          setError(err.message);
+        } else {
+          setError('An unknown error occurred');
+        }
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    handleSendData();
+  }, []);
+
   const [assets, setAssets] = useState<Asset[]>([
     { ticker: "", amount: "", averagePrice: "" },
   ]);
