@@ -1,5 +1,5 @@
 const sendDataToGoogleSheet = async (count: number, type: string): Promise<void> => {
-    const GOOGLE_SHEET_API_URL = process.env.REACT_APP_GOOGLE_SHEET_API_URL
+    const GOOGLE_SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbzumD04G3fHYmMc0GQDXTAZ7qe22KMTYIx_QD8avxQul1sf2CNqYZ_9g72GRvmwRMBYwQ/exec'
     const url = `${GOOGLE_SHEET_API_URL}?count=${count}&type=${type}`;
   
     try {
