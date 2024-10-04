@@ -1,4 +1,6 @@
 import { CheckIcon } from "@heroicons/react/24/outline";
+import { useEffect, useState } from 'react';
+import sendDataToGoogleSheet from "../api/sendDataToGoogleSheet";
 const includedFeatures = [
   "Export to PDF file",
   "Store the historical data",
@@ -6,8 +8,6 @@ const includedFeatures = [
   "Separate different portfolios in different kinds of assets classes",
   "Alert of price changes",
 ];
-import { useEffect, useState } from 'react';
-import sendDataToGoogleSheet from "../api/sendDataToGoogleSheet";
 
 export default function Features() {
   const [error, setError] = useState<string | null>(null);
